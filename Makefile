@@ -1,5 +1,5 @@
 PRUNE=0
-GPU=0
+GPU=1
 CUDNN=0
 OPENCV=0
 OPENBLAS=0
@@ -11,8 +11,7 @@ QUANTIZATION=1
 # fill it if you have installed mkl yourself
 MKLROOT=/workspace/ygao/software_backup/intel/mkl
 
-ARCH= -gencode arch=compute_30,code=sm_30 \
-      -gencode arch=compute_35,code=sm_35 \
+ARCH= -gencode arch=compute_35,code=sm_35 \
       -gencode arch=compute_50,code=[sm_50,compute_50] \
       -gencode arch=compute_52,code=[sm_52,compute_52]
 #      -gencode arch=compute_20,code=[sm_20,sm_21] \ This one is deprecated?

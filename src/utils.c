@@ -3,11 +3,11 @@
 #include <string.h>
 #include <math.h>
 #include <assert.h>
-#include <unistd.h>
 #include <float.h>
 #include <limits.h>
 #ifdef WIN32
 #include "gettimeofday.h"
+#include <unistd.h>
 #else
 #include <sys/time.h>
 #endif
